@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}NexTrip{% endblock %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  
+		 <!-- Bootstrap -->
+		 <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		 <link href="/css/style.css" rel="stylesheet" media="screen">
+		 <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+
+	</head>
+	
+	<body>
+		{% block header %}
+		{% include "AppBundle::header.html.twig"%}
+		{% endblock %}
+		
+		{% block body %}
+		{% endblock %}
+		
+		{% block footer %}
+		{% include "AppBundle::footer.html.twig"%}
+		{% endblock %}
+		
+	</body>

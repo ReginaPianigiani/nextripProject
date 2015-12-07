@@ -1,0 +1,160 @@
+{% include "AppBundle::layout.html.twig" %}
+
+	{% block body %}
+	
+	
+	<div class="container ">
+		<div class="row form-group barra-ricerca">
+			<form role="form" method="post" >
+			{{ form_start(form) }}	
+	
+				<div class="col-lg-3 col-md-3 col-sm-10 col-xs-10">
+					<label for="autocomplete">Inserisci una nuova meta:</label>
+				</div>
+			    <div class="col-lg-7 col-md-7 col-sm-9 col-xs-9">
+					{{ form_widget(form.destination, {'attr':{'class':'form-control', 'placeholder':'Meta', 'onFocus':'geolocate()'}}) }}
+					
+			    </div>
+			    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				{{ form_widget(form.insert, {'attr':{'class':'btn btn-info'}}) }}
+					
+			    </div>
+				{{ form_end(form) }}
+			</form>
+		</div>
+		
+
+		   <!-- div grande-->
+			<div class="row black-box-profile-main">
+				<div class="single-box-profile-main">
+					<div class="col-md-12">
+						<div class="parte_dati">
+						  <p>Berlino</p>
+							<span class="icone">
+								<img src="/images/time.svg" alt="time" />
+								<span>2h</span>
+								<a href="./comments.php">
+								  <img src="/images/comment.svg" alt="comment" />
+								  <span>22</span>
+								</a>
+								<a href="./friends.php">
+									<img src="/images/friends.svg" alt="friends" />
+									<span>18</span>
+								</a>
+							</span>
+						</div>
+						<div class="immagine">
+						  <img src="http://rispendo.corriere.it/files/2013/10/berlinpanorama1.jpg" alt="meta" />
+						</div>
+					</div>
+				</div>
+			</div>
+		   
+		<div class="row ">
+			<div class="col-lg-6  col-md-6  col-sm-12  col-xs-12 padding-right">
+				<div class="black-box-profile">
+					<div class="single-box-profile">
+						<div class="parte_dati">
+							<p>Berlino</p>
+							<span class="icone">
+								<img src="/images/time.svg" alt="time" />
+								<span>2h</span>
+								<a href="./comments.php">
+								  <img src="/images/comment.svg" alt="comment" />
+								  <span>22</span>
+								</a>
+								<a href="./friends.php">
+									<img src="/images/friends.svg" alt="friends" />
+									<span>18</span>
+								</a>
+							  </span>
+						</div>
+						<div class="immagine">
+						  <img src="http://rispendo.corriere.it/files/2013/10/berlinpanorama1.jpg" alt="meta" />
+					   </div>
+					</div>
+				</div>
+			 </div>
+			   
+			<div class="col-lg-6  col-md-6  col-sm-12  col-xs-12  padding-left">
+				<div class="black-box-profile">
+					<div class="single-box-profile">
+					    <div class="parte_dati">
+							<p>Berlino</p>
+							<span class="icone">
+								<img src="/images/time.svg" alt="time" />
+								<span>2h</span>
+								<a href="./comments.php">
+									 <img src="/images/comment.svg" alt="comment" />
+									 <span>22</span>
+								</a>
+								<a href="./friends.php">
+									<img src="/images/friends.svg" alt="friends" />
+									<span>18</span>
+								</a>
+							</span>
+						</div>
+						<div class="immagine">
+						  <img src="http://rispendo.corriere.it/files/2013/10/berlinpanorama1.jpg" alt="meta" />
+						</div>
+					</div>
+				 </div>
+			 </div>
+		 </div>
+		 
+		 
+		<div class="row ">
+			<div class="col-lg-6  col-md-6  col-sm-12  col-xs-12 padding-right">
+				<div class="black-box-profile">
+					<div class="single-box-profile">
+					    <div class="parte_dati">
+							<p>Berlino</p>
+							<span class="icone">
+									<img src="/images/time.svg" alt="time" />
+								<span>2h</span>
+								<a href="./comments.php">
+									<img src="/images/comment.svg" alt="comment" />
+								  <span>22</span>
+								</a>
+								<a href="./friends.php">
+									<img src="/images/friends.svg" alt="friends" />
+									<span>18</span>
+								</a>
+							</span>
+						</div>
+						<div class="immagine">
+						  <img src="http://rispendo.corriere.it/files/2013/10/berlinpanorama1.jpg" alt="meta" />
+						</div>
+					</div>
+				</div>
+			</div>
+		   
+			<div class="col-lg-6  col-md-6  col-sm-12  col-xs-12 padding-left">
+			    <div class="black-box-profile">
+					<div class="single-box-profile">
+						<div class="parte_dati">
+							 <p>Berlino</p>
+							<span class="icone">
+								<img src="/images/time.svg" alt="time" />
+								<span>2h</span>
+								<a href="./comments.php">
+								  <img src="/images/comment.svg" alt="comment" />
+								  <span>22</span>
+								</a>
+								<a href="./friends.php">
+									<img src="/images/friends.svg" alt="friends" />
+									<span>18</span>
+								</a>
+							 </span>
+						</div>
+						<div class="immagine">
+							  <img src="http://rispendo.corriere.it/files/2013/10/berlinpanorama1.jpg" alt="meta" />
+						 </div>
+					</div>
+			    </div>
+			</div>
+		 </div>
+   
+	</div>
+	
+	{% endblock %}

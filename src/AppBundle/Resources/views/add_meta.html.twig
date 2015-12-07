@@ -1,0 +1,46 @@
+{% include "AppBundle::layout.html.twig" %}
+
+	{% block body %}
+		
+	<div class="container">
+		<div class="titolo">
+			<h2>
+			  La tua prossima meta &egrave Berlino
+			</h2>
+		 </div>
+
+		   <!-- div grande-->
+		<div class="row black-box-meta">
+			<div class="single-box-meta">
+				<div class="col-md-12">
+					<div class="immagine">
+					  <img src="http://rispendo.corriere.it/files/2013/10/berlinpanorama1.jpg" alt="meta" />
+				    </div>
+				</div>
+			</div>
+		</div>
+		   
+		<div class="row meta-form">
+			<form class="form" role="form">
+				<div class="row form-group">
+				  <label for="datea" class="col-md-6 col-sm-12 col-xs-12 ">Segli la data di partenza:</label>
+				  <input type="date" class="col-md-6 col-sm-12 col-xs-12 form-control" id="datea" name="datea">
+				</div>
+				<div class="row form-group">
+				  <label for="dater" class="col-md-6 col-sm-12 col-xs-12 ">Segli la data di arrivo:</label>
+				  <input type="date" class="col-md-6 col-sm-12 col-xs-12 form-control" id="dater" name="dater">
+				</div>
+				<div class="row">
+				  <h4>Chiedi ai tuoi amici non iscritti su facebook di commentare</h4>
+				</div>
+				<div class="row email">
+					<div class="form-group">
+						<input type="email" class="col-md-12 col-sm-12 col-xs-12 form-control" id="email1" name="email1" placeholder="email">
+					 </div>
+				</div>
+				<button type="submit" class="btn btn-default">Invia</button>
+			</form>
+		 </div>
+	 
+	</div>
+	{% endblock %}

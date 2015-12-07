@@ -1,0 +1,56 @@
+	{% include "AppBundle::layout.html.twig" %}
+
+	{% block body %}
+	
+	<div class="homeC container">
+
+	  <!--barra ricerca -->
+	    <div class="barra-ricerca">
+			<div class="form-group center">
+			    <div class="inner-addon right-addon">
+					<i class="glyphicon glyphicon-search"></i>
+					<input id="cerca" name="cerca" class="form-control" placeholder="Cerca"  type="text">
+			    </div>
+			</div>
+	    </div>
+
+	  <!--inizio del riquadro dei commenti-->
+	    <div class="row black-box">
+			<div class="single-box">
+				<div class="col-md-12">
+					<div class="parte_dati comment">
+					  <p>Commenti Berlino</p>
+						<div class="profilo">
+							<p>Matteo</p>
+							<img class="img-circle" src="http://a407.idata.over-blog.com/4/22/05/10/varie/don-matteo-copia-1.jpg">
+						</div>
+					</div>
+					<div class="immagine comment_image" style="background-image: url('http://rispendo.corriere.it/files/2013/10/berlinpanorama1.jpg')">
+					</div>
+					<div>
+						<div class="commento">
+							<p class="blue">Luigi</p>
+							<p class="black">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							<p class="blue">Lucia</p>
+							<p class="black">Vacci</p>
+							<p class="blue">Marco</p>
+							<p class="black">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div class="commento add_comment">
+						<div class="form-group">
+							<div class="textarea_comment">
+							  <textarea id="comment" name="comment" class="form-control" placeholder="Scrivi il tuo commento"></textarea>
+							</div>
+							<div class="submit_comment">
+							  <input type="submit" class="btn btn-info" value="Inserisci">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	{% endblock %}

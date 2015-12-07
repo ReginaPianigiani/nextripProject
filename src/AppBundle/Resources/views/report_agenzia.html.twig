@@ -1,0 +1,88 @@
+{% include "AppBundle::layout_agenzia.html.twig" %}
+
+	{% block body %}
+	
+	<div class="report-container">
+		<p>Filtra i contenuti</p>
+	  <!--barra ricerca -->   
+			<form class="form-inline filter-report row" role="form">
+				<div class="form-group col-md-3">
+					<input type="meta" class="form-control" id="meta" placeholder="Filtra per meta">
+				</div>
+				<div class="form-group col-md-3">
+					<input type="periodo" class="form-control" id="periodo" placeholder="Filtra per periodo">
+				</div>
+				<div class="form-group col-md-3">
+					<input type="utente" class="form-control" id="utente" placeholder="Cerca un utente">
+				</div>
+				<button type="submit" class="btn btn-default col-md-2">Invia</button>
+			</form>
+	</div>
+	<div class="table-container table-report">
+		<p>Hai cercato: <strong>Berlino</strong></p>  
+		<div class="row">	
+			<div class="col-md-8 col-lg-8">
+				<table class="table">
+					<thead>
+					<tr>
+						<th>Utente</th>
+						<th>Periodo</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>John Doe</td>
+							<td>Giugno</td>
+						</tr>
+						<tr>
+							<td>Mary Moe</td>
+							<td>Febbraio</td>
+						</tr>
+						<tr>
+							<td>July Dooley</td>
+							<td>Luglio</td>
+						</tr>
+						<tr>
+							<td>John Doe</td>
+							<td>Giugno</td>
+						</tr>
+						<tr>
+							<td>Mary Moe</td>
+							<td>Febbraio</td>
+						</tr>
+						<tr>
+							<td>July Dooley</td>
+							<td>Luglio</td>
+						</tr>
+						<tr>
+							<td>John Doe</td>
+							<td>Giugno</td>
+						</tr>
+						<tr>
+							<td>Mary Moe</td>
+							<td>Febbraio</td>
+						</tr>
+						<tr>
+							<td>July Dooley</td>
+							<td>Luglio</td>
+						</tr>
+						<tr>
+							<td>John Doe</td>
+							<td>Giugno</td>
+						</tr>
+						<tr>
+							<td>Mary Moe</td>
+							<td>Febbraio</td>
+						</tr>
+						<tr>
+							<td>July Dooley</td>
+							<td>Luglio</td>
+						</tr>
+				  
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div> 
+
+	{% endblock %}
